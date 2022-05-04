@@ -1,5 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using static Testlet.Enums;
+using static Testlet.Constants;
+using System.Linq;
 
 namespace Testlet
 {
@@ -26,6 +29,17 @@ namespace Testlet
             {
                 throw new ArgumentNullException("Wrong parameters, nulls not allowed.");
             }
+            if (!ValidateNumberOfTypeItems(items, ItemTypeEnum.Operational, TotalOperationalItems))
+            {
+                throw new ArgumentException("The number of items of type Operational is not correct.");
+            }
+        }
+
+        private static bool ValidateNumberOfTypeItems(List<Item> items, ItemTypeEnum itemType, int total)
+        {
+            var result = true;
+            result = items.Count(x => x.ItemType == itemType) == total;
+            return result;
         }
     }
 }
