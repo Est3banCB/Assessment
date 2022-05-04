@@ -62,5 +62,31 @@ namespace Testlet.Tests
             var ex = Assert.Throws<ArgumentException>(() => new Testlet(Guid.NewGuid().ToString(), lstItems));
             Assert.AreEqual(expectedErrorMessage, ex.Message);
         }
+
+        [Test]
+        public void InvalidNumberOfPretest()
+        {
+            var operational = new Item()
+            {
+                ItemId = Guid.NewGuid().ToString(),
+                ItemType = Enums.ItemTypeEnum.Operational
+            };
+
+            var pretest = new Item()
+            {
+                ItemId = Guid.NewGuid().ToString(),
+                ItemType = Enums.ItemTypeEnum.Pretest
+            };
+
+            var lstItems = new List<Item>()
+            {
+                operational, operational, operational, operational, operational, operational,
+                pretest
+            };
+
+            var expectedErrorMessage = "The number of items of type Pretest is not correct.";
+            var ex = Assert.Throws<ArgumentException>(() => new Testlet(Guid.NewGuid().ToString(), lstItems));
+            Assert.AreEqual(expectedErrorMessage, ex.Message);
+        }
     }
 }
