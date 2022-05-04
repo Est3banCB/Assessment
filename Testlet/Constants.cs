@@ -10,5 +10,6 @@ namespace Testlet
     {
         public const int TotalOperationalItems = 6;
         public const int TotalPretestItems = 4;
+        public const int TotalInitialPretestItems = 2;
     }
 }
