@@ -9,5 +9,6 @@ namespace Testlet
     public class Constants
     {
         public const int TotalOperationalItems = 6;
+        public const int TotalPretestItems = 4;
     }
 }

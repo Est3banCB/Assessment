@@ -33,6 +33,10 @@ namespace Testlet
             {
                 throw new ArgumentException("The number of items of type Operational is not correct.");
             }
+            if (!ValidateNumberOfTypeItems(items, ItemTypeEnum.Pretest, TotalPretestItems))
+            {
+                throw new ArgumentException("The number of items of type Pretest is not correct.");
+            }
         }
 
         private static bool ValidateNumberOfTypeItems(List<Item> items, ItemTypeEnum itemType, int total)
