@@ -20,7 +20,43 @@ namespace Testlet
 
         public List<Item> Randomize()
         {
-            return Items;
+            var random = new Random();
+
+            var pretest = Items.Where(x => x.ItemType == ItemTypeEnum.Pretest)
+                                      .Select(x => new Item
+                                      {
+                                          ItemId = x.ItemId,
+                                          ItemType = x.ItemType,
+                                      }).ToList();
+
+            var leftover = Items.Where(x => x.ItemType == ItemTypeEnum.Operational)
+                                       .Select(x => new Item
+                                       {
+                                           ItemId = x.ItemId,
+                                           ItemType = x.ItemType,
+                                       }).ToList();
+
+            var @return = new List<Item>();
+
+            int index;
+
+            for (var i = 1; i <= TotalInitialPretestItems; i++)
+            {
+                index = random.Next(pretest.Count() - 1);
+                @return.Add(pretest[index]);
+                pretest.RemoveAt(index);
+            }
+
+            leftover.AddRange(pretest);
+
+            while (leftover.Count() - 1 >= 0)
+            {
+                index = random.Next(leftover.Count() - 1);
+                @return.Add(leftover[index]);
+                leftover.RemoveAt(index);
+            }
+
+            return @return;
         }
 
         private static void ValidateParameters(string testletId, List<Item> items)
