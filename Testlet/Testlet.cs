@@ -10,6 +10,7 @@ namespace Testlet
 
         public Testlet(string testletId, List<Item> items)
         {
+            ValidateParameters(testletId, items);
             TestletId = testletId;
             Items = items;
         }
@@ -17,6 +18,14 @@ namespace Testlet
         public List<Item> Randomize()
         {
             return Items;
+        }
+
+        private static void ValidateParameters(string testletId, List<Item> items)
+        {
+            if (testletId == null)
+            {
+                throw new ArgumentNullException("Wrong parameters, nulls not allowed.");
+            }
         }
     }
 }
