@@ -29,5 +29,13 @@ namespace Testlet.Tests
             var ex = Assert.Throws<ArgumentNullException>(() => new Testlet(null, lstItems));
             Assert.AreEqual(expectedErrorMessage, ex.Message);
         }
+
+        [Test]
+        public void InvalidParameterItems()
+        {
+            var expectedErrorMessage = "Value cannot be null. (Parameter 'Wrong parameters, nulls not allowed.')";
+            var ex = Assert.Throws<ArgumentNullException>(() => new Testlet(Guid.NewGuid().ToString(), null));
+            Assert.AreEqual(expectedErrorMessage, ex.Message);
+        }
     }
 }
