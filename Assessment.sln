@@ -3,26 +3,26 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32421.90
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Testlet", "Testlet\Testlet.csproj", "{4EEEC267-4B69-4CCE-976C-7C78E8093692}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Testlet", "Testlet\Testlet.csproj", "{4EEEC267-4B69-4CCE-976C-7C78E8093692}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Testlet.Tests", "Testlet.Tests\Testlet.Tests.csproj", "{69C38CF1-0AC9-493D-AC24-ACD420D05E96}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Testlet.Tests", "Testlet.Tests\Testlet.Tests.csproj", "{69C38CF1-0AC9-493D-AC24-ACD420D05E96}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Documentation", "Documentation", "{3A95C6B3-19B9-4379-8E16-41F496A8ADD9}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{6CBB45FA-C50C-45F5-955A-14E487AC0E3E}"
 	ProjectSection(SolutionItems) = preProject
-		..\Documentation\Step by step images\01 - Test creation 1.1..png = ..\Documentation\Step by step images\01 - Test creation 1.1..png
-		..\Documentation\Step by step images\02 - Creation of code to solve the test 1.1..png = ..\Documentation\Step by step images\02 - Creation of code to solve the test 1.1..png
-		..\Documentation\Step by step images\03 - Test creation 1.2..png = ..\Documentation\Step by step images\03 - Test creation 1.2..png
-		..\Documentation\Step by step images\04 - Creation of code to solve the test 2.1..png = ..\Documentation\Step by step images\04 - Creation of code to solve the test 2.1..png
-		..\Documentation\Step by step images\05 - Test creation 2.1..png = ..\Documentation\Step by step images\05 - Test creation 2.1..png
-		..\Documentation\Step by step images\06 - Creation of code to solve the test 2.1..png = ..\Documentation\Step by step images\06 - Creation of code to solve the test 2.1..png
-		..\Documentation\Step by step images\07 - Test creation 2.2..png = ..\Documentation\Step by step images\07 - Test creation 2.2..png
-		..\Documentation\Step by step images\08 - Creation of code to solve the test 2.2..png = ..\Documentation\Step by step images\08 - Creation of code to solve the test 2.2..png
-		..\Documentation\Step by step images\09 - Test creation 3.1..png = ..\Documentation\Step by step images\09 - Test creation 3.1..png
-		..\Documentation\Step by step images\10 - Creation of code to solve the test 3.1..png = ..\Documentation\Step by step images\10 - Creation of code to solve the test 3.1..png
-		..\Documentation\Step by step images\11 - Test creation 3.2..png = ..\Documentation\Step by step images\11 - Test creation 3.2..png
-		..\Documentation\Step by step images\12 - Execution of code to solve test 3.2.; no more code needed.png = ..\Documentation\Step by step images\12 - Execution of code to solve test 3.2.; no more code needed.png
-		..\Documentation\CandidateEvaluationExercise.pdf = ..\Documentation\CandidateEvaluationExercise.pdf
-		..\Documentation\Documentation.docx = ..\Documentation\Documentation.docx
+		Documentation\Step by step images\01 - Test creation 1.1..png = Documentation\Step by step images\01 - Test creation 1.1..png
+		Documentation\Step by step images\02 - Creation of code to solve the test 1.1..png = Documentation\Step by step images\02 - Creation of code to solve the test 1.1..png
+		Documentation\Step by step images\03 - Test creation 1.2..png = Documentation\Step by step images\03 - Test creation 1.2..png
+		Documentation\Step by step images\04 - Creation of code to solve the test 2.1..png = Documentation\Step by step images\04 - Creation of code to solve the test 2.1..png
+		Documentation\Step by step images\05 - Test creation 2.1..png = Documentation\Step by step images\05 - Test creation 2.1..png
+		Documentation\Step by step images\06 - Creation of code to solve the test 2.1..png = Documentation\Step by step images\06 - Creation of code to solve the test 2.1..png
+		Documentation\Step by step images\07 - Test creation 2.2..png = Documentation\Step by step images\07 - Test creation 2.2..png
+		Documentation\Step by step images\08 - Creation of code to solve the test 2.2..png = Documentation\Step by step images\08 - Creation of code to solve the test 2.2..png
+		Documentation\Step by step images\09 - Test creation 3.1..png = Documentation\Step by step images\09 - Test creation 3.1..png
+		Documentation\Step by step images\10 - Creation of code to solve the test 3.1..png = Documentation\Step by step images\10 - Creation of code to solve the test 3.1..png
+		Documentation\Step by step images\11 - Test creation 3.2..png = Documentation\Step by step images\11 - Test creation 3.2..png
+		Documentation\Step by step images\12 - Execution of code to solve test 3.2.; no more code needed.png = Documentation\Step by step images\12 - Execution of code to solve test 3.2.; no more code needed.png
+		Documentation\CandidateEvaluationExercise.pdf = Documentation\CandidateEvaluationExercise.pdf
+		Documentation\Documentation.docx = Documentation\Documentation.docx
 	EndProjectSection
 EndProject
 Global
