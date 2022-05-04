@@ -22,7 +22,7 @@ namespace Testlet
 
         private static void ValidateParameters(string testletId, List<Item> items)
         {
-            if (testletId == null)
+            if (testletId == null || items == null)
             {
                 throw new ArgumentNullException("Wrong parameters, nulls not allowed.");
             }
